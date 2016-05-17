@@ -16,21 +16,21 @@ github上搜索所有库的方法（trending只显示25个）：在搜索框输�
 
 为了方便命令行直接执行，把前面的git clone也带上了
 
-git clone https://github.com/AFNetworking/AFNetworking.git
-git clone https://github.com/RestKit/RestKit.git
-git clone https://github.com/yuantiku/YTKNetwork.git
-git clone https://github.com/ReactiveCocoa/ReactiveCocoa.git
-git clone https://github.com/Mantle/Mantle.git
-git clone https://github.com/rs/SDWebImage.git
-git clone https://github.com/ccgus/fmdb.git
-git clone https://github.com/facebook/pop.git
-git clone https://github.com/jdg/MBProgressHUD.git
-git clone https://github.com/robbiehanson/XMPPFramework.git
-git clone https://github.com/zwaldowski/BlocksKit.git
-git clone https://github.com/SnapKit/Masonry.git
-git clone https://github.com/BradLarson/GPUImage.git
-git clone https://github.com/tonymillion/Reachability.git
-git clone https://github.com/marcuswestin/WebViewJavascriptBridge.git
+* git clone https://github.com/AFNetworking/AFNetworking.git
+* git clone https://github.com/RestKit/RestKit.git
+* git clone https://github.com/yuantiku/YTKNetwork.git
+* git clone https://github.com/ReactiveCocoa/ReactiveCocoa.git
+* git clone https://github.com/Mantle/Mantle.git
+* git clone https://github.com/rs/SDWebImage.git
+* git clone https://github.com/ccgus/fmdb.git
+* git clone https://github.com/facebook/pop.git
+* git clone https://github.com/jdg/MBProgressHUD.git
+* git clone https://github.com/robbiehanson/XMPPFramework.git
+* git clone https://github.com/zwaldowski/BlocksKit.git
+* git clone https://github.com/SnapKit/Masonry.git
+* git clone https://github.com/BradLarson/GPUImage.git
+* git clone https://github.com/tonymillion/Reachability.git
+* git clone https://github.com/marcuswestin/WebViewJavascriptBridge.git
 
 ### 主要是使用的
 
