@@ -371,9 +371,11 @@
 4. 应用安全、逆向、iTools(PP助手)
 
 ## 十六 Swift
-1 基本语法
-2 主要思想
-3 作用，异同，方向
+1. 基本语法
+2. 主要思想
+3. Swift VS Objective-C
+4. 函数、闭包、类、Optional Chaining、元组、集合操作符
+5. Swift与Objective-C混编
 
 ## 十七  规范与风格
 1. 代码规范
