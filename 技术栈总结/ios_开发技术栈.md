@@ -175,102 +175,218 @@
 2. 动画引擎的设计
 3. Pop应用与例子
 
-## 多线程
-1 NSThread
-2 GCD
-3 NSOperation
-4 对于线程安全的理解
-5 NSRunLoop
+## 五. 多线程
+1. NSThread
+2. GCD: 串行队列、并行队列
+3. NSOperation
+4. NSRunLoop
+5. 对于线程安全的理解、死锁问题的解决、线程间同步的方法、读写锁
 
-## 对象间通信机制
-1 Target-Action
-2 Delegate
-3 Block
-4 KVO
-5 NSNotificationCenter
+## 六. 对象间通信机制
+1. Target-Action
+2. Delegate
+3. Block
+4. KVO
+5. NSNotificationCenter
 
-## 数据持久化
-1 NSUserDefault
-2 Plist
-3 Archive
-4 CoreData
-5 SqLite + FMDB
+## 七. 数据持久化
+1. NSUserDefault
+2. Plist
+3. Archive
+4. CoreData
+5. SqLite + FMDB
+6. 沙盒、文件管理
+7. 备份到iCloud属性的设置(非用户数据如果备份到iCloud, 审核会被拒)
+8. 缓存的设计与实现
 
-## 网络请求与缓存
-1 AFNetworking
-2 SDWebImage
-3 HTTP协议, HTTPS
-4 NSURLConnection
-5 NSURLSession
+## 八. 网络请求与缓存
+1. TCP/IP
+2. HTTP协议、HTTPS
+3. HTTP2/SPDY、长连接
+4. AFNetworking
+5. NSURLConnection
+6. NSURLSession
+7. SDWebImage
+8. 网络层设计
+9. Hybrid
+10. 网络性能分析与优化
+11. 其他网络库与相关设计分析
+12. HTTP DNS
+13. 服务器接口设计与数据解析
+
+## 九. 设计与架构
+
+### 设计模式
+1. 代理模式(多播代理)
+2. 观察者模式
+3. 单例模式
+4. Command模式
+5. 适配器模式
+6. MVC
+
+### 设计与架构
+1. MVC VS MVVM VS MVP VS VIPER
+2. MVCS (Store), Fat Model, Thin Model
+3. 依赖注入、控制反转
+4. 面向对象设计
+5. 组件化方案
+6. AOP
+
+## 十. 性能优化与改进
+与之前的有些重复，主要是一些总结与整理
+
+1. Instruments进行渲染性能分析，离屏渲染等
+2. drawRect性能
+3. 内存使用
+4. 异步绘制
+5. 性能对比分析
+
+## 十一. 常用开源库
+### 常用
+1. AFNetworking
+2. SDWebImage
+3. Mantel
+4. Masonry
+5. 日志收集与处理
+
+### 编程思想与框架
+1. ReactiveCocoa
+2. React Native
+ 
+### 工具库
+1. YYKit: YYModel等
+
+### 异步绘制
+1. AsyncDisplayKit
+
+### 组件库
 
 
+## 十二 工具使用
+### Xcode
+1. 基本使用
+2. 插件
+3. 开发插件
+4. 调试技巧与工具
 
-## 设计模式
-1 代理模式
-多播代理
+### Instuments
+1. memory leak
+2. time profiler
+3. Core Animation
 
-2 观察者模式
+### 包管理
+1. CocoaPods
+2. Cathage
+3. Swift Pack Manager
+4. Git submodule
 
-3 单例模式
+### 代码管理
+1. Git
+2. SVN
 
-4 Command模式
+### 文档
+1. Markdown(MacDown或者Mou)
 
-5 适配器模式
-
-6 MVC
-
-## 代码组织与结构
-MVC
-MVVM
-MVP
-MVCS (Store)
-Fat Model, Thin Model
-
-## 性能优化与改进
-1 Instruments进行渲染性能分析，离屏渲染等
-2 drawRect性能
+### 其他
+1. CheatSheet
 
 
-
-## 工具使用
-1 XCode
-2 Instruments
-3 CocoaPods
-4 Git Submodule
-5 Git
-6 Mou
-
-## 编程思想与框架
-1 ReactiveCocoa
-2 React Native
-
-## Cocoa框架
+## 十三 Cocoa框架
 ### 音频、视频
+1. 音频播放相关
+	* AudioSession
+	* AVAudioPlayer
+	* AVPlayer
+	* AudioService
+2. 视频播放相关
+	* MPMediaPlayer
+	* AVPlayer
+3. 录音
+	* AVAudioRecorder
+4. 视频直播
+	* HLS
 ### 相册、相机
+1. UIImagePickerController
+2. AVCaptureSession(自定义相机)
+3. ALAsset
+4. PhotoFramework
+
 ### 地图与定位
+1. MapKit
+2. CoreLocation
+3. Baidu SDK使用
 ### 运动检测
+1. CoreMotion
+2. HealthKit
+3. CMMotionManager(摇一摇？)
+### 图像处理
+1. 滤镜、模糊
+2. CoreImage
+3. GPUImage
+4. 二维码
 
-## 工程管理与应用发布
+### 通信录
 
-## 应用功能扩展
-1 APNS
-2 定位
-3 视频与音频
-4 长连接
-5 相机与图片处理
-6 第三方登录与分享
-7 IM(环信，云信)
-8 转场动画
+## 十四 工程管理与应用发布
+### 管理
+1. 工程管理与组织结构
+2. 代码管理
+3. 单元测试
+4. 单元测试覆盖率
+5. 冒烟测试
 
-## 工程配置
+### 推送
+1. APNS
+2. 第三方推送
 
-## Swift
+### 打包与证书
+1. 开发者账号
+2. 证书
+3. Provising file
+4. 自动打包脚本
+5. 编译脚本
+
+### 热更新与动态部署
+1. JSPatch
+2. Wax
+3. Weex
+4. RN
+
+### 发布
+1. Testflight
+2. APP审核与上架(IDFA, 审核注意事项)
+3. 需要递交的材料与准备
+
+### 反馈与收集
+1. 应用评分
+2. 反馈收集
+3. 崩溃日志收集
+4. 埋点
+5. 活动运营
+
+## 十五 扩展与其他
+1. 第三方登录与分享
+2. IM(环信，云信)， XMPP
+3. MQTT(第三方推送)
+4. 应用安全、逆向、iTools(PP助手)
+
+## 十六 Swift
 1 基本语法
 2 主要思想
 3 作用，异同，方向
 
-## 规范与风格
-代码规范
+## 十七  规范与风格
+1. 代码规范
+2. 工程组织规范
+3. 视觉设计规范
 
-## 其他
-64bit Suppprt
+## 十八 算法与思路
+1. 算法导论
+2. LeetCode
+3. 常见的解决问题与分析问题的思路
+
+## 十九 其他
+1. 64bit Support
+2. HTTPS Support
+3. IPv6 Support
+
